@@ -160,31 +160,31 @@ export default class TronWeb extends EventEmitter {
     }
 
     setFullNode(fullNode) {
-        if (utils.isString(fullNode))
-            fullNode = new providers.HttpProvider(fullNode);
+        // if (utils.isString(fullNode))
+        //     fullNode = new providers.HttpProvider(fullNode);
 
-        if (!this.isValidProvider(fullNode))
-            throw new Error('Invalid full node provided');
+        // if (!this.isValidProvider(fullNode))
+        //     throw new Error('Invalid full node provided');
 
-        this.fullNode = fullNode;
-        this.fullNode.setStatusPage('wallet/getnowblock');
+        // this.fullNode = fullNode;
+        // this.fullNode.setStatusPage('wallet/getnowblock');
 
-        this.getFullnodeVersion();
+        // this.getFullnodeVersion();
     }
 
     setSolidityNode(solidityNode) {
-        if (utils.isString(solidityNode))
-            solidityNode = new providers.HttpProvider(solidityNode);
+        // if (utils.isString(solidityNode))
+        //     solidityNode = new providers.HttpProvider(solidityNode);
 
-        if (!this.isValidProvider(solidityNode))
-            throw new Error('Invalid solidity node provided');
+        // if (!this.isValidProvider(solidityNode))
+        //     throw new Error('Invalid solidity node provided');
 
-        this.solidityNode = solidityNode;
-        this.solidityNode.setStatusPage('walletsolidity/getnowblock');
+        // this.solidityNode = solidityNode;
+        // this.solidityNode.setStatusPage('walletsolidity/getnowblock');
     }
 
     setEventServer(...params) {
-        this.event.setServer(...params)
+        // this.event.setServer(...params)
     }
 
     currentProviders() {
