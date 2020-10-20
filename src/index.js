@@ -46,14 +46,14 @@ export default class TronWeb extends EventEmitter {
         } else {
             fullNode = options;
         }
-        if (utils.isString(fullNode))
-            fullNode = new providers.HttpProvider(fullNode);
+        // if (utils.isString(fullNode))
+        //     fullNode = new providers.HttpProvider(fullNode);
 
-        if (utils.isString(solidityNode))
-            solidityNode = new providers.HttpProvider(solidityNode);
+        // if (utils.isString(solidityNode))
+        //     solidityNode = new providers.HttpProvider(solidityNode);
 
-        if (utils.isString(eventServer))
-            eventServer = new providers.HttpProvider(eventServer);
+        // if (utils.isString(eventServer))
+        //     eventServer = new providers.HttpProvider(eventServer);
 
         this.event = new Event(this);
         this.transactionBuilder = new TransactionBuilder(this);
